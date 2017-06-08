@@ -1,0 +1,19 @@
+.header {
+	font-family: 'Lora', serif;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+img {
+	height: 100px;
+	display: inline;
+}
+
+.header > h1 {
+	display: inline;
+}
+
+#coming-soon {
+	text-align: center;
+}
