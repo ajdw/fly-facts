@@ -13,8 +13,6 @@ img {
 	display: inline;
 }
 
-
-
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .10em solid orange; /* The typwriter cursor */
@@ -29,7 +27,7 @@ img {
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 40% }
 }
 
 /* The typewriter cursor effect */
@@ -37,7 +35,6 @@ img {
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
-
 
 
 #fly-fact {

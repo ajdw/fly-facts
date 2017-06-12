@@ -7,7 +7,6 @@ function getAFlyFact(){
 	var factText = randomFact.fact;
 
 	var factOutput = document.getElementById('fly-fact');
-	factOutput.innerHTML='<p>' + factText + '</p>';
 
 	if (factOutput.className == '') { /* for the first click, add class immediately */
       factOutput.className = 'typewriter';
@@ -17,6 +16,9 @@ function getAFlyFact(){
         factOutput.className = 'typewriter';
       }, 100);
   }
+
+  	factOutput.innerHTML = factText;
+
 
 }
 
