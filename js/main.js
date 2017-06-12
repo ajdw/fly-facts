@@ -19,7 +19,6 @@ function getAFlyFact(){
 
   	factOutput.innerHTML = factText;
 
-
 }
 
 // Our fly facts array
@@ -31,17 +30,17 @@ var facts = [
 },
 // 
 {
-	fact: 'Jeff Goldblum starred as a fly in the 1987 movie The Fly',
+	fact: 'Jeff Goldblum starred as a fly in the 1987 movie The Fly.',
 	audio: 'audio/fly-fact2.mp3'
 },
 // 
 {
-	fact: 'The fly blah blah blah this is another fact about the fly',
+	fact: 'The common house fly has a lifespan of up to 28 days.',
 	audio: 'audio/fly-fact3.mp3'
 },
 // 
 {
-	fact: 'Flies vomit on their food before they eat it up',
+	fact: 'Flies vomit on their food before they eat it up.',
 	audio: 'audio/fly-fact4.mp3'
 }
 
