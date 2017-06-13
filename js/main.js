@@ -3,9 +3,9 @@ function getAFlyFact(){
 
 	// flyFactArray grabs our entire facts array outside of our function
 	var flyFactArray = facts;
+	// randomFact uses Math.floor, Math.random and the length of our array to grab a random fact
 	var randomFact = flyFactArray[Math.floor(Math.random() * flyFactArray.length)];
-	var factText = randomFact.fact;
-
+	// factOutput refereneces our DOM element with the Id of 'fly-fact'
 	var factOutput = document.getElementById('fly-fact');
 
 	if (factOutput.className == '') { /* for the first click, add class immediately */
@@ -17,7 +17,7 @@ function getAFlyFact(){
       }, 100);
   }
 
-  	factOutput.innerHTML = factText;
+  	factOutput.innerHTML = randomFact.fact;
 
 }
 
