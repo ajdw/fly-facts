@@ -7,13 +7,17 @@ function getAFlyFact(){
 	var randomFact = flyFactArray[Math.floor(Math.random() * flyFactArray.length)];
 	// factOutput refereneces our DOM element with the Id of 'fly-fact'
 	var factOutput = document.getElementById('fly-fact');
+	var flyPic = document.getElementById('fly-pic');
 
-	if (factOutput.className == '') { /* for the first click, add class immediately */
+	if (factOutput.className == '' && flyPic.className == '') { /* for the first click, add class immediately */
       factOutput.className = 'typewriter';
+      flyPic.className = 'animated shake';
     } else { /* for second and subequent clicks, first remove class and add after timeout */
       factOutput.className = '';
+      flyPic.className = '';
       window.setTimeout(function() {
         factOutput.className = 'typewriter';
+        flyPic.className = 'animated shake';
       }, 100);
   }
 
